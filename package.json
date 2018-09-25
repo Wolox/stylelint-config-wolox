@@ -14,7 +14,7 @@
     "styleLint",
     "styleLintConfig"
   ],
-  "author": "Front End Army <gabriel.zanzotti@wolox.com.ar>",
+  "author": "Front-End Army <gabriel.zanzotti@wolox.com.ar>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Wolox/stylelint-config-wolox/issues"
