@@ -1,7 +1,30 @@
 'use strict';
 
 module.exports = {
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-no-indistinguishable-colors"
+  ],
   "rules": {
+    "plugin/stylelint-no-indistinguishable-colors": true,
+    "scss/at-extend-no-missing-placeholder": true,
+    "scss/at-import-no-partial-leading-underscore": true,
+    "scss/at-import-partial-extension-blacklist": ["scss"],
+    "scss/at-mixin-argumentless-call-parentheses": "always",
+    "scss/at-mixin-named-arguments": "never",
+    "scss/at-mixin-parentheses-space-before": "always",
+    "scss/dollar-variable-colon-space-after": "always",
+    "scss/dollar-variable-colon-space-before": "never",
+    "scss/dollar-variable-pattern": /^[a-z]+(-[a-z]+)*$/,
+    "scss/percent-placeholder-pattern": /^[a-z]+(-[a-z]+)*$/,
+    "scss/double-slash-comment-whitespace-inside": "always",
+    "scss/media-feature-value-dollar-variable": "always",
+    "scss/operator-no-newline-after": true,
+    "scss/operator-no-newline-before": true,
+    "scss/operator-no-unspaced": true,
+    "scss/partial-no-import": true,
+    "scss/selector-no-redundant-nesting-selector": true,
+    "scss/no-duplicate-dollar-variables": true,
     "at-rule-blacklist": null,
     "at-rule-empty-line-before": "always",
     "at-rule-name-case": "lower",
