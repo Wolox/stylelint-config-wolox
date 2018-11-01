@@ -117,7 +117,7 @@ module.exports = {
     "length-zero-no-unit": true,
     "linebreaks": "unix",
     "max-empty-lines": 1,
-    "max-line-length": [30, {
+    "max-line-length": [100, {
       "ignore": ["comments"]
     }],
     "max-nesting-depth": 3,
