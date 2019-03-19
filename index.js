@@ -160,7 +160,7 @@ module.exports = {
     "selector-attribute-operator-space-before": "never",
     "selector-attribute-operator-whitelist": null,
     "selector-attribute-quotes": "always",
-    "selector-class-pattern": "^[a-z]+(-[a-z]+)*$",
+    "selector-class-pattern": "^[a-z]+(-[a-z]+)*+(-[0-9]+)*$",
     "selector-combinator-blacklist": null,
     "selector-combinator-space-after": "always",
     "selector-combinator-space-before": "always",
