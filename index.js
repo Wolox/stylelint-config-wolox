@@ -30,7 +30,9 @@ module.exports = {
     "at-rule-name-case": "lower",
     "at-rule-name-newline-after": null,
     "at-rule-name-space-after": "always",
-    "at-rule-no-unknown": true,
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["function", "if", "each", "include", "mixin", "for", "else"]
+     }],
     "at-rule-no-vendor-prefix": null,
     "at-rule-semicolon-newline-after": "always",
     "at-rule-semicolon-space-before": "never",
@@ -153,14 +155,16 @@ module.exports = {
     "property-no-unknown": true,
     "property-no-vendor-prefix": true,
     "property-whitelist": null,
-    "rule-empty-line-before": "always",
+    "rule-empty-line-before": ["always", {
+      "except": ["first-nested"]
+    }],
     "selector-attribute-brackets-space-inside": "never",
     "selector-attribute-operator-blacklist": null,
     "selector-attribute-operator-space-after": "never",
     "selector-attribute-operator-space-before": "never",
     "selector-attribute-operator-whitelist": null,
     "selector-attribute-quotes": "always",
-    "selector-class-pattern": "^[a-z]+(-[a-z]+)*$",
+    "selector-class-pattern": "^[a-z]+(-[a-z]+)*+(-[0-9]+)*$",
     "selector-combinator-blacklist": null,
     "selector-combinator-space-after": "always",
     "selector-combinator-space-before": "always",
