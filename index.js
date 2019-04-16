@@ -22,7 +22,7 @@ module.exports = {
     "scss/operator-no-newline-after": true,
     "scss/operator-no-newline-before": true,
     "scss/operator-no-unspaced": true,
-    "scss/partial-no-import": true,
+    "scss/partial-no-import": null,
     "scss/selector-no-redundant-nesting-selector": true,
     "scss/no-duplicate-dollar-variables": true,
     "at-rule-blacklist": null,
