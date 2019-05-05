@@ -3,10 +3,8 @@
 module.exports = {
   "plugins": [
     "stylelint-scss",
-    "stylelint-no-indistinguishable-colors"
   ],
   "rules": {
-    "plugin/stylelint-no-indistinguishable-colors": true,
     "scss/at-extend-no-missing-placeholder": true,
     "scss/at-import-no-partial-leading-underscore": true,
     "scss/at-import-partial-extension-blacklist": ["scss"],
@@ -26,7 +24,9 @@ module.exports = {
     "scss/selector-no-redundant-nesting-selector": true,
     "scss/no-duplicate-dollar-variables": true,
     "at-rule-blacklist": null,
-    "at-rule-empty-line-before": "always",
+    "at-rule-empty-line-before": ["always", {
+      "except": ["after-same-name"]
+    }],
     "at-rule-name-case": "lower",
     "at-rule-name-newline-after": null,
     "at-rule-name-space-after": "always",
