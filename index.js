@@ -156,8 +156,7 @@ module.exports = {
     "property-no-vendor-prefix": true,
     "property-whitelist": null,
     "rule-empty-line-before": ["always", {
-      "except": ["first-nested"],
-      "ignoreAtRules": ["function", "if", "each", "include", "mixin", "for", "else", "import", "media"]
+      "ignore": ["first-nested"],
     }],
     "selector-attribute-brackets-space-inside": "never",
     "selector-attribute-operator-blacklist": null,
