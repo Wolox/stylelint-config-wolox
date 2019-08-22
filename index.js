@@ -25,7 +25,7 @@ module.exports = {
     "scss/no-duplicate-dollar-variables": true,
     "at-rule-blacklist": null,
     "at-rule-empty-line-before": ["always", {
-      "except": ["after-same-name"]
+      "ignoreAtRules": ["function", "if", "each", "include", "mixin", "for", "else", "import", "media"]
     }],
     "at-rule-name-case": "lower",
     "at-rule-name-newline-after": null,
@@ -156,7 +156,7 @@ module.exports = {
     "property-no-vendor-prefix": true,
     "property-whitelist": null,
     "rule-empty-line-before": ["always", {
-      "except": ["first-nested"]
+      "ignore": ["first-nested"],
     }],
     "selector-attribute-brackets-space-inside": "never",
     "selector-attribute-operator-blacklist": null,
