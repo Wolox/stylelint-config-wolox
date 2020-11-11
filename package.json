@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-wolox",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "style-lint configuration used at Wolox",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/Wolox/stylelint-config-wolox#readme",
   "peerDependencies": {
-    "stylelint": "^9.8.0",
-    "stylelint-scss": "^3.4.0"
+    "stylelint": "^13.7.0",
+    "stylelint-scss": "^3.18.0"
   }
 }

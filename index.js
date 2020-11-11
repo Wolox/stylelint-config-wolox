@@ -22,7 +22,9 @@ module.exports = {
     "scss/operator-no-unspaced": true,
     "scss/partial-no-import": null,
     "scss/selector-no-redundant-nesting-selector": true,
-    "scss/no-duplicate-dollar-variables": true,
+    "scss/no-duplicate-dollar-variables": [ true, {
+      "ignoreInsideAtRules": ["if", "mixin", "media"]
+    }],
     "at-rule-blacklist": null,
     "at-rule-empty-line-before": ["always", {
       "ignoreAtRules": ["function", "if", "each", "include", "mixin", "for", "else", "import", "media"]
@@ -31,7 +33,7 @@ module.exports = {
     "at-rule-name-newline-after": null,
     "at-rule-name-space-after": "always",
     "at-rule-no-unknown": [true, {
-      "ignoreAtRules": ["function", "if", "each", "include", "mixin", "for", "else"]
+      "ignoreAtRules": ["if", "for", "extend", "mixin"]
      }],
     "at-rule-no-vendor-prefix": null,
     "at-rule-semicolon-newline-after": "always",
@@ -75,13 +77,13 @@ module.exports = {
     "declaration-colon-space-before": "never",
     "declaration-empty-line-before": "never",
     "declaration-no-important": true,
-    "declaration-property-unit-blacklist": {
+    "declaration-property-unit-disallowed-list": {
       "/[a-zA-Z]+/": [
         "em",
         "rem"
       ],
     },
-    "declaration-property-unit-whitelist": {
+    "declaration-property-unit-allowed-list": {
       "line-height": ["px"],
       "/^animation/": ["s"],
       "/^transition/": ["s"]
@@ -92,7 +94,7 @@ module.exports = {
     "font-family-no-duplicate-names": true,
     "font-family-no-missing-generic-family-keyword": null,
     "font-weight-notation": "numeric",
-    "function-blacklist": ["rgb"],
+    "function-disallowed-list": ["rgb"],
     "function-calc-no-unspaced-operator": true,
     "function-comma-newline-after": "never-multi-line",
     "function-comma-newline-before": "never-multi-line",
@@ -105,7 +107,7 @@ module.exports = {
     "function-parentheses-space-inside": "never",
     "function-url-no-scheme-relative": true,
     "function-url-quotes": "always",
-    "function-url-scheme-blacklist": [
+    "function-url-scheme-disallowed-list": [
       "/^http:/",
       "data"
     ],
@@ -183,7 +185,7 @@ module.exports = {
     "selector-max-id": 0,
     "selector-max-pseudo-class": 3,
     "selector-max-specificity": null,
-    "selector-max-type": 0,
+    "selector-max-type": 2,
     "selector-max-universal": null,
     "selector-nested-pattern": null,
     "selector-no-qualifying-type": true,
